@@ -13,3 +13,16 @@
 """
     
     
+temp = input("How hot is it in celsius degrees: ")
+
+print("You said it was " + temp + " Degrees Celsius")
+
+C = float(temp)
+if float(C) < 0:
+    print("Fridge too cold!")
+elif float(C) >= 0 and float(C) <=4:
+    print("Fridge is ok")
+elif float(C) >4 and float(C) <=6:
+    print("Fridge too warm")
+else:
+    print("Fridge Broken") 

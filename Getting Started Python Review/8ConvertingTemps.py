@@ -1,4 +1,4 @@
-
+#Utilizing inpuit and math operators to convert fahrenheit to celsius along with formatting with concatenation
 
 F = input("What is the temp in Fahrenheit?: ")
 F = int(F)

@@ -1,1 +1,0 @@
-# Exercise to create a BMI calculator

@@ -13,7 +13,8 @@ def main():
 
     for animal in animals:
         print(animal)
-    
-
+    print()
+    for i in range(0,len(animals)):
+        print(animals[i])
 main()
 

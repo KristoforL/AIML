@@ -1,7 +1,7 @@
 """
     CRUD
     
-    Create a progeam that siplays the following menu
+    Done: Create a program that displays the following menu
 
     1.Display database
     2.Add an item
@@ -11,13 +11,13 @@
     
     The program contains a list of items; for example fruits
     
-    If you select 1m, the program displays the items in the list, numbering each item. For exmaple:
+    Done: If you select 1, the program displays the items in the list, numbering each item. For exmaple:
     
     0: orange
     1: banana
     2: blackberry
 
-    If you select 2 the program asks you to enter a new item. It adds what you've typed to the list.
+    Done: If you select 2 the program asks you to enter a new item. It adds what you've typed to the list.
     
     If you select 3, the program asks you to enter the list number of an item to delete. It deletes the specified item from the list
     
@@ -29,13 +29,32 @@
     
 """
 
-MY_LIST = ["Ramen", "Ice Cream", "Smoothies", ""]
+MY_LIST = ["Ramen", "Ice Cream", "Smoothies", "Gyoza", "Chicken Sandwich"]
 
 def greet():
     welcome = input("Please make a selection \n1.Display database \n2.Add an item \n3.Delete an item \n4.Change an item \n5.Quit\n")
     
+    
+def display():
+    x = 1
+    for item in MY_LIST:
+        print(str(x) + ". " + item)
+        int(x)
+        x+=1
+        
 def addItem():
-    pass
+    adding = input("What would you like to add to the list?: ")
+    MY_LIST.append(adding)
+    print()
+
+def delete():
+    adding = input("What number item would you like to remove to the list?: ")
+    int(adding)
+    if adding not in range(0, len(MY_LIST)):
+        print("Sorry number not in range")
+    else:
+        MY_LIST.pop(adding)
+        print()
 
 
-greet()
+delete()

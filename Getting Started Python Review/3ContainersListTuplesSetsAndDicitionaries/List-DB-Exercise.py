@@ -30,12 +30,15 @@
 """
 
 MY_LIST = ["Ramen", "Ice Cream", "Smoothies", "Gyoza", "Chicken Sandwich"]
+OPTIONS = ("1. Display database", "2. Add an item", "3. Delete an item", "4. Change an item", "5. Quit\n")
 
 def greet():
-    welcome = int(input("Please make a selection \n1.Display database \n2.Add an item \n3.Delete an item \n4.Change an item \n5.Quit\n"))
-
-    return welcome
-        
+    for i in OPTIONS:
+        print(i)
+    select = int(input("Pick an option: "))
+    
+    return select
+    
 def display():
     x = 1
     for item in MY_LIST:
